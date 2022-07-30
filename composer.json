@@ -1,0 +1,19 @@
+{
+    "name": "suraj/contact",
+    "description": "This will send email to admin & save the contact in database",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GHOSTBLAZEE",
+            "email": "sksurajpra138@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Suraj\\Contact\\": "src/"
+        }
+    }
+}
