@@ -1,5 +1,5 @@
 {
-    "name": "suraj/contact",
+    "name": "sldinfosoft/contact",
     "description": "This will send email to admin & save the contact in database",
     "type": "library",
     "license": "MIT",
