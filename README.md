@@ -1,3 +1,3 @@
-#Contact Form Package
+# Contact Form Package
 
-##This will send email to admin & save the contact in database
+## This will send email to admin & save the contact in database
