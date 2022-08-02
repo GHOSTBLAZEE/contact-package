@@ -11,6 +11,10 @@ use Suraj\Contact\Models\Contact;
 
 class EnquiryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('web');
+    }
     public function contact()
     {
         return view('contact::contact');
@@ -18,13 +22,13 @@ class EnquiryController extends Controller
 
     public function enquiry_store(Request $request)
     {
-        // $request->validate([
-        //     'email_id' => 'email',
-        //     'mobile_number' => 'numeric'
-        // ], [
-        //     'mobile_number.numeric' => 'Enter a Valid Mobile Number',
-        //     'email_id.email' => 'Enter a Valid Email Id',
-        // ]);
+        $request->validate([
+            'email_id' => 'email',
+            'mobile_number' => 'numeric'
+        ], [
+            'mobile_number.numeric' => 'Enter a Valid Mobile Number',
+            'email_id.email' => 'Enter a Valid Email Id',
+        ]);
 
         $enquiry = Contact::create([
             'email_id' => $request->email_id,
